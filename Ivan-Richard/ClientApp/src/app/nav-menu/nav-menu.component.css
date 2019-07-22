@@ -19,58 +19,12 @@ li.link-active a:focus {
     z-index: 1;
 }
 
-/*override the original color of the humbugger button*/
-.navbar-toggle .icon-bar {
-  background-color: black;
-}
-
-/*temporary border*/
-.border{
-  border: 2px solid black;
-}
-
-.profile-block{
-  border:1px solid green;
-  overflow: auto;
-}
-
-
-
-.profile-block-info{
-  float:left;
-  margin-left: 30px;
-}
-
-.profile-name {
-  font-size: 10pt;
-}
-
-.profile-title{
-  font-size:8pt;
-}
-
-.profile-pic{
-  border-radius: 30px;
-  border:1px solid black;
-  float:left;
-  width:100px;
-  height:100px;
-}
-
-@media(max-width: 264px){
-  .profile-block-info{
-    margin-left: 0px;
-  }
-}
-
-
 @media (min-width: 768px) {
     /* On small screens, convert the nav menu to a vertical sidebar */
     .main-nav {
-        height: calc(25% - 20px);
-        width: 100%;
+        height: 100%;
+        width: calc(25% - 20px);
     }
-
     .navbar {
         border-radius: 0px;
         border-width: 0px;
