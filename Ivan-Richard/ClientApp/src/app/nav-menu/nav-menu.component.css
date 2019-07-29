@@ -9,6 +9,9 @@ li.link-active a:hover,
 li.link-active a:focus {
     background-color: #4189C7;
     color: white;
+    -webkit-box-shadow: 0 6px 4px -4px gainsboro;
+    -moz-box-shadow: 0 6px 4px -4px gainsboro;
+    box-shadow: 0 6px 4px -4px gainsboro;
 }
 
 /* Keep the nav menu independent of scrolling and on top of other items */
@@ -36,8 +39,26 @@ li.link-active a:focus {
   float:right;
 }
 
-.profile-block{
+.profile-block, .profile-block:focus{
   position:relative;
+  float:left;
+  padding:5px 5px 5px 5px;
+  outline: none;
+  position:relative;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.profile-block:hover{
+  background-color: #f8f8f8;
+}
+
+.home-active{
+  border-bottom:3px solid #4189C7;
+
+  -webkit-box-shadow: 0 6px 4px -4px gainsboro;
+    -moz-box-shadow: 0 6px 4px -4px gainsboro;
+    box-shadow: 0 6px 4px -4px gainsboro;
 }
 
  .profile-block-info{
@@ -45,15 +66,16 @@ li.link-active a:focus {
   top:15px;
   float:left;
   margin-left: 20px;
+
 }
 
  .profile-name {
-   position:relative;
-  font-size: 10pt;
+  position:relative;
+  font-size: 15pt;
 }
 
- .profile-title{
-  font-size:8pt;
+.profile-title{
+  font-size:10pt;
 }
 
  .profile-pic{
