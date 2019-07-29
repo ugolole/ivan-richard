@@ -28,7 +28,7 @@ li.link-active a:focus {
 
  /*temporary border*/
 .border{
-
+  border: 1px solid black;
 }
 
 .navbar-nav{
@@ -63,6 +63,7 @@ li.link-active a:focus {
   width:100px;
   height:100px;
 }
+
 .navbar li {
   font-size: 15px;
   margin: 6px;
@@ -73,11 +74,8 @@ li.link-active a:focus {
   border-radius: 4px;
 }
 
-@media(max-width: 264px){
 
-}
-
-@media (max-width: 768px) {
+@media (max-width: 765px) {
   .shadow {
     -webkit-box-shadow: 0 6px 4px -4px gainsboro;
     -moz-box-shadow: 0 6px 4px -4px gainsboro;
