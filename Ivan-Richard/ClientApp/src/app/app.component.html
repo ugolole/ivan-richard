@@ -8,7 +8,11 @@
   <div class="row">
     <div class="col-sm-12">
       <div class='content-box' >
-        <router-outlet></router-outlet>
+        <!--Controlls how the router-outlet will renender the next required page,
+          in this case the rendering process adds an animations.-->
+        <main [@routeAnimations]='prepareRoute(outlet)' class="content">
+            <router-outlet #outlet="outlet"></router-outlet>
+        </main>
       </div>
     </div>
   </div>
