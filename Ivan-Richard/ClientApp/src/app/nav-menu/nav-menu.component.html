@@ -2,7 +2,9 @@
     <div class='navbar navbar-light border'>
 
         <div class='profile-block' [routerLink]='["/"]'>
-          <div class='profile-pic'> </div>
+          <div >
+            <img class="profile-pic" src="assets/ivan richard.jpeg">
+          </div>
           <div class='profile-block-info border'>
             <p class="profile-name">
               Ivan Richard Ugolole
@@ -33,7 +35,7 @@
 
                 <li  [routerLinkActive]='["link-active"]' [routerLinkActiveOptions] ='{exact: true}'>
                   <a [routerLink]='["/"]' >
-                      <span class = "glyphicon glyphicon-home"> </span> About me
+                      <span class = "glyphicon glyphicon-user"> </span> About me
                   </a>
                 </li>
             </ul>
