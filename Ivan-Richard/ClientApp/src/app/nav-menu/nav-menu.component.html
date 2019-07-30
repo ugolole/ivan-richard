@@ -1,12 +1,14 @@
-<div class='container main-nav'>
+<div class='container main-nav '>
     <div class='navbar navbar-light '>
 
-        <div class=' profile-block ' [routerLink]='["/"]' [routerLinkActive]='["home-active"]' [routerLinkActiveOptions] ='{exact: true}' >
+        <div class=' profile-block ' [routerLink]='["/"]'
+              [routerLinkActive]='["home-active"]'
+              [routerLinkActiveOptions] ='{exact: true}' (click)='collapse()' >
             <img class="profile-pic" src="assets/ivan richard.jpeg">
-          <span class='profile-block-info '>
-            <p class="profile-name"> Ivan Richard Ugolole </p>
-            <p class="profile-title" > Full Stack Developer </p>
-          </span>
+            <span class='profile-block-info '>
+              <p class="profile-name"> Ivan Richard Ugolole </p>
+              <p class="profile-title" > Full Stack Developer </p>
+            </span>
         </div>
 
         <div class='navbar-header'>
