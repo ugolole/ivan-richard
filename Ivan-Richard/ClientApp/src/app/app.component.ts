@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {RouterOutlet} from '@angular/router';
 
 import { fader, slider } from './route-animations';
+
 
 @Component({
   selector: 'app-root',
@@ -12,7 +13,7 @@ import { fader, slider } from './route-animations';
     slider,
   ]
 })
-export class AppComponent {
+export class AppComponent{
   title = 'app';
 
   //create a prepare router method to pass-in the dynamic data
@@ -20,4 +21,6 @@ export class AppComponent {
     //allows you to pass outlet to the animation directly in the html
     return outlet && outlet.activatedRouteData && outlet.activatedRouteData['animation'];
   }
+
+
 }
