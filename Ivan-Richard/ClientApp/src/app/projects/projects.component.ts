@@ -1,5 +1,7 @@
-import {Component, Inject} from "@angular/core";
+import {Component, OnInit, Inject} from "@angular/core";
 import {Router} from "@angular/router";
+
+declare var $:any;
 
 @Component({
   selector:"projects",
@@ -7,7 +9,19 @@ import {Router} from "@angular/router";
   styleUrls:['./projects.component.css']
 })
 
-export class ProjectsComponent{
+export class ProjectsComponent implements OnInit{
+
+  ngOnInit(){
+    $('#index').click(function(){
+       alert("jquery work fine!");
+
+    });
+
+    $(document).ready(function() {
+      $(".fancybox").fancybox();
+    });
+  }
+
   constructor(private router: Router, @Inject('BASE_URL') private baseUrl: string){
 
   }

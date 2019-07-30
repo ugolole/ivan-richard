@@ -1,3 +1,9 @@
 .border{
   border: 1px solid black;
 }
+
+.project-container{
+  border : 1px solid black;
+  height: 300px;
+  padding : 30px 30px 30px 30px;
+}
