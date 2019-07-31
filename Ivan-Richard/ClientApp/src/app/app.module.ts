@@ -9,6 +9,7 @@ import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
 import {ProjectsComponent} from './projects/projects.component';
 import {AboutComponent} from './about/about.component';
+import {FooterComponent} from './footer/footer.component';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
@@ -18,7 +19,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     NavMenuComponent,
     HomeComponent,
     ProjectsComponent,
-    AboutComponent
+    AboutComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -30,7 +32,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
       //the prepare method created earlier will look for that property 'isRight' and
       //add the correct animation
       { path: 'projects', component: ProjectsComponent, data: {animation: 'isLeft'}},
-      { path: 'about', component: AboutComponent, data : {animation: 'isRight'} }
+      { path: 'about', component: AboutComponent, data : {animation: 'isRight'}},
     ])
   ],
   providers: [],
