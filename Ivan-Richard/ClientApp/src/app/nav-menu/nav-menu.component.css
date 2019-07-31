@@ -22,6 +22,15 @@ li.link-active a:focus {
     right: 0;
     z-index: 1;
     background-color:white;
+    padding-left:5%;
+    padding-right:5%;
+
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+
+    -webkit-box-shadow: 0 6px 4px -4px gainsboro;
+    -moz-box-shadow: 0 6px 4px -4px gainsboro;
+    box-shadow: 0 6px 4px -4px gainsboro;
 }
 
 .navbar{
