@@ -93,7 +93,7 @@ li.link-active a:focus {
 
  .profile-pic{
   border-radius: 100px;
-  border:1px solid black;
+  border:1px solid #efefef;
   float:left;
   width:100px;
   height:100px;
