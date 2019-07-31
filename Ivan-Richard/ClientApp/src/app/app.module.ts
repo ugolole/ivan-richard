@@ -7,20 +7,30 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
+import {ProjectsComponent} from './projects/projects.component';
+import {AboutComponent} from './about/about.component';
+
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavMenuComponent,
-    HomeComponent
+    HomeComponent,
+    ProjectsComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     HttpClientModule,
     FormsModule,
+    BrowserAnimationsModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
-      //{ path: 'counter', component: CounterComponent },
+      //the prepare method created earlier will look for that property 'isRight' and
+      //add the correct animation
+      { path: 'projects', component: ProjectsComponent, data: {animation: 'isLeft'}},
+      { path: 'about', component: AboutComponent, data : {animation: 'isRight'} }
     ])
   ],
   providers: [],

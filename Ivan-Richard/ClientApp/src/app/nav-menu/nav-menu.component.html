@@ -1,25 +1,41 @@
-<div class='main-nav'>
-    <div class='navbar navbar-inverse'>
+<div class='container main-nav '>
+    <div class='navbar navbar-light '>
+
+        <div class=' profile-block ' [routerLink]='["/"]'
+              [routerLinkActive]='["home-active"]'
+              [routerLinkActiveOptions] ='{exact: true}' (click)='collapse()' >
+            <img class="profile-pic" src="assets/ivan richard.jpeg">
+            <span class='profile-block-info '>
+              <p class="profile-name"> Ivan Richard Ugolole </p>
+              <p class="profile-title" > Full Stack Developer </p>
+            </span>
+        </div>
+
         <div class='navbar-header'>
-            <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse' [attr.aria-expanded]='isExpanded' (click)='toggle()'>
+            <button type='button' class='navbar-toggle' data-toggle='collapse'
+            data-target='.navbar-collapse' [attr.aria-expanded]='isExpanded'
+            (click)='toggle()'>
                 <span class='sr-only'>Toggle navigation</span>
-                <span class='icon-bar'></span>
+                <span class='icon-bar icon-bar-override'></span>
                 <span class='icon-bar'></span>
                 <span class='icon-bar'></span>
             </button>
-            <a class='navbar-brand' [routerLink]='["/"]'>Ivan_Richard</a>
         </div>
-        <div class='clearfix'></div>
-        <div class='navbar-collapse collapse' [ngClass]='{ "in": isExpanded }'>
-            <ul class='nav navbar-nav'>
 
-                <li [routerLinkActive]='["link-active"]' [routerLinkActiveOptions]='{ exact: true }'>
-                    <a [routerLink]='["/"]' (click)='collapse()'>
-                        <span class='glyphicon glyphicon-home'></span> Home
+        <div  class='navbar-collapse collapse shadow' [ngClass]='{ "in": isExpanded }'>
+            <ul class='nav navbar-nav '>
+
+                <li  [routerLinkActive]='["link-active"]' [routerLinkActiveOptions]='{ exact: true }'>
+                    <a  [routerLink]='["/projects"]' (click)='collapse()'>
+                        <span class='glyphicon glyphicon-home'></span> Projects
                     </a>
                 </li>
 
-                
+                <li  [routerLinkActive]='["link-active"]' [routerLinkActiveOptions] ='{exact: true}'>
+                  <a [routerLink]='["/about"]' (click)='collapse()'>
+                      <span class = "glyphicon glyphicon-user"> </span> About me
+                  </a>
+                </li>
             </ul>
         </div>
     </div>

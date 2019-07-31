@@ -1,3 +1,14 @@
+.content-box{
+  position:relative;
+  top:200px;
+  padding-left:30px;
+  padding-right:30px;
+}
+
+.border{
+  border: 1px solid black;
+}
+
 @media (max-width: 767px) {
   /* On small screens, the nav menu spans the full width of the screen. Leave a space for it. */
   .body-content {
