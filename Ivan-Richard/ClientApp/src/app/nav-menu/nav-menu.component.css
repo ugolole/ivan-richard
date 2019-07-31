@@ -61,12 +61,17 @@ li.link-active a:focus {
 
 .home-active{
   border-bottom:3px solid #4189C7;
+  border-left: 2px solid #efefef;
+  border-right: 2px solid #efefef;
+  border-top: 2px solid #efefef;
 
   color: rgb(1, 89, 172);
 
   -webkit-box-shadow: 0 6px 4px -4px gainsboro;
   -moz-box-shadow: 0 6px 4px -4px gainsboro;
   box-shadow: 0 6px 4px -4px gainsboro;
+
+
 }
 
  .profile-block-info{
