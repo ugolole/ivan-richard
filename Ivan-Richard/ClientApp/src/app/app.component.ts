@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {RouterOutlet} from '@angular/router';
 
-import { fader, slider } from './route-animations';
+import { slider, fader } from './route-animations';
 
 
 @Component({
@@ -9,8 +9,7 @@ import { fader, slider } from './route-animations';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
   animations:[ //create animations array to allow user to select the prefared animation
-    //fader,
-    slider,
+    fader,
   ]
 })
 export class AppComponent{

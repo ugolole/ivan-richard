@@ -4,9 +4,7 @@ import {
   style,
   query,
   group,
-  animateChild,
   animate,
-  keyframes
 } from '@angular/animations';
 
 //basic use case is a standard animation that get applied to every route change
@@ -51,8 +49,9 @@ export const fader =
     transition('isLeft => *', slideTo('right') )
   ]);
 
-  function slideTo(direction) {
+  export function slideTo(direction:any) {
     const optional = { optional: true };
+
     return [
       query(':enter, :leave', [
         style({
@@ -62,6 +61,7 @@ export const fader =
           width: '100%'
         })
       ], optional),
+
       query(':enter', [
         style({ [direction]: '-100%'})
       ]),
