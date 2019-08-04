@@ -52,12 +52,12 @@
   transition:color 0.2s;
 }
 
-#myFooter .fa-facebook:hover{
- color: #2b55ff;
+#myFooter .fa-quora:hover{
+ color:  #cf0707;;
 }
 
-#myFooter .fa-facebook:focus{
-  color: #2b55ff;
+#myFooter .fa-quora:focus{
+  color: #cf0707;
 }
 
 #myFooter .fa-github:hover{
@@ -67,14 +67,6 @@
  #myFooter .fa-github:focus{
    color: black;
  }
-
-#myFooter .fa-google-plus:hover{
-  color:red;
-}
-
-#myFooter .fa-google-plus:focus{
-  color:red;
-}
 
 #myFooter .fa-twitter:hover{
   color: #00aced;
