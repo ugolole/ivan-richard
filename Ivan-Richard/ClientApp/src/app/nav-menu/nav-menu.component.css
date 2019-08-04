@@ -36,7 +36,7 @@ li.link-active a:focus {
 .navbar{
   position: relative;;
   top: 0px;
-  padding-top: 50px;
+  padding-top: 20px;
 }
 
 /*override the original color of the humbugger button*/
