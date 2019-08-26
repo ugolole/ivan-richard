@@ -1,0 +1,20 @@
+.feature-container{
+  padding : 30px 30px 30px 30px;
+}
+
+.feature{
+  border-radius: 30px;
+  box-shadow: 6px 6px 6px  gainsboro;
+}
+
+.content-box{
+  padding-left:10%;
+  padding-right:10%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.homepage-image{
+  width: 99%;
+  border-radius: 30px;
+}
