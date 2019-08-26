@@ -6,7 +6,6 @@ import {
   group,
   animate,
 } from '@angular/animations';
-
 //basic use case is a standard animation that get applied to every route change
 export const fader =
   trigger('routeAnimations',[ //the trigger must match what you placed in the html
@@ -30,13 +29,13 @@ export const fader =
           opacity:0,
           transform:'scale(0) translateY(100%)'
         })
-      ]),
+      ],{ optional: true }),
 
       //to animate in the new page as it enters
       query(':enter', [
         animate('600ms ease',
         style({opacity: 1, transform: 'scale(1) translate(0)'})),
-      ])
+      ], {optional: true}) //the optional value is for moments when no element is returned
     ]),
   ]);
 
