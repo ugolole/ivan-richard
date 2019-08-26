@@ -4,8 +4,15 @@
 
 .feature{
   border-radius: 10px;
-  box-shadow: 2px 2px 2px  gainsboro;
+  box-shadow: 2px 2px 2px gainsboro;
   border: 1px solid #efefef;
+  height: 500px;
+}
+
+.feature:hover{
+  border : 1px solid rgb(75, 72, 72);
+  box-shadow: 4px 4px 4px gainsboro;
+
 }
 
 .feature-link{
@@ -14,8 +21,9 @@
   color:black;
 }
 
+
 .feature-content{
-  text-align: justify;
+  text-align: left;
   padding-left: 30px;
   padding-right: 30px;
 }
