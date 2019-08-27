@@ -1,0 +1,15 @@
+.content-box{
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  width: 100%;
+  height: 97vh;
+}
+
+canvas{
+  touch-action: none;
+}
+
+.datGUI{
+  position: absolute;
+  right: 0px;
+}
