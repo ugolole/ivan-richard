@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import {ProjectsComponent} from './projects/projects.component';
 import {AboutComponent} from './about/about.component';
 import {FooterComponent} from './footer/footer.component';
+import {BasicSphere} from './projects/basicSphere/basicSphere.component';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
@@ -20,7 +21,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     HomeComponent,
     ProjectsComponent,
     AboutComponent,
-    FooterComponent
+    FooterComponent,
+    BasicSphere
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -33,6 +35,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
       //add the correct animation
       { path: 'projects', component: ProjectsComponent, data: {animation: 'isLeft'}},
       { path: 'about', component: AboutComponent, data : {animation: 'isRight'}},
+      { path: 'basicSphere', component: BasicSphere, data : {animation: 'isRight'}}
     ])
   ],
   providers: [],

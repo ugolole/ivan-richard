@@ -12,14 +12,14 @@ declare var $:any;
 export class ProjectsComponent implements OnInit{
 
   ngOnInit(){
-    $('#index').click(function(){
-       alert("jquery work fine!");
+    // $('#index').click(function(){
+    //    alert("jquery work fine!");
 
-    });
+    // });
 
-    $(document).ready(function() {
-      $(".fancybox").fancybox();
-    });
+    // $(document).ready(function() {
+    //   $(".fancybox").fancybox();
+    // });
   }
 
   constructor(private router: Router, @Inject('BASE_URL') private baseUrl: string){

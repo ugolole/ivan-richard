@@ -25,7 +25,15 @@
       ],
       "scripts": [
         "../node_modules/jquery/dist/jquery.min.js",
-        "../node_modules/fancybox/dist/js/jquery.fancybox.js"
+        "../node_modules/three/build/three.min.js",
+        "../node_modules/three/examples/js/libs/stats.min.js",
+        "../node_modules/three/examples/js/loaders/FBXLoader.js",
+        "../node_modules/resize-sensor/ResizeSensor.min.js",
+        "../node_modules/three/examples/js/controls/OrbitControls.js",
+        "../node_modules/three/examples/js/libs/inflate.min.js",
+        "../node_modules/dat.gui/build/dat.gui.js",
+        "assets/js/Artifact.js",
+        "assets/js/EnvironmentAPI.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {

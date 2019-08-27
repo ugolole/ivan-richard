@@ -31,11 +31,14 @@
     "bootstrap": "^3.4.1",
     "classlist.js": "^1.1.20150312",
     "core-js": "^2.6.9",
+    "dat.gui": "^0.7.6",
     "fancybox": "^3.0.1",
     "font-awesome": "^4.7.0",
     "fontawesome": "^5.6.3",
     "jquery": "^3.4.1",
+    "resize-sensor": "0.0.6",
     "rxjs": "^5.5.12",
+    "three": "^0.107.0",
     "zone.js": "^0.8.29"
   },
   "devDependencies": {
