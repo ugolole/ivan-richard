@@ -10,7 +10,7 @@
 }
 
 .feature:hover{
-  border : 1px solid rgb(75, 72, 72);
+  border : 1px solid #4189C7;
   box-shadow: 4px 4px 4px gainsboro;
 
 }
