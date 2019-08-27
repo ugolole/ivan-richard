@@ -1,4 +1,4 @@
-function Environment(filepath, textures, width, height, container){
+function Environment(filepath, textures, width, height, container, x,y,z){
     //Artifact properies
     this.mixers = [];
     this.object = null;
@@ -45,7 +45,7 @@ function Environment(filepath, textures, width, height, container){
     this.container.appendChild(this.renderer.domElement);
 
     //get the fbx Object with its mixture and add it to the scene.
-    this.fbxObject = new Artifact(filepath);
+    this.fbxObject = new Artifact(filepath,x,y,z);
     this.mixers = this.fbxObject.mixers;
     this.object = this.fbxObject.object;
     this.actions = this.fbxObject.actions;
@@ -64,8 +64,8 @@ function Environment(filepath, textures, width, height, container){
     var controls = new THREE.OrbitControls(this.camera, this.renderer.domElement);
     controls.target.set(0, 0, 0);
     controls.maxPolarAngle = Math.PI * 0.5;
-	controls.minDistance = 200;
-	controls.maxDistance = 600;
+	  controls.minDistance = 200;
+	  controls.maxDistance = 600;
     controls.update();
 
     //function to start the animation loop

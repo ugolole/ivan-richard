@@ -4,7 +4,6 @@ import { Router } from "@angular/router";
 declare var $:any;
 declare const Environment:any;
 declare var dat:any;
-declare var clear;
 
 @Component({
   selector: 'basicSphere',
@@ -41,7 +40,7 @@ export class BasicSphere implements OnInit{
         textures,
         $('#'+container).width(),
         $('#'+container).height(),
-        container);
+        container,0,0,0);
 
     //run the environment.
     basicSphereEnv.run();
