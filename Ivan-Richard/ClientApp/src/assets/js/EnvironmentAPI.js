@@ -20,6 +20,7 @@ function Environment(filepath, textures, width, height, container){
     this.stats.domElement.style.position = 'absolute';
     this.stats.domElement.style.left = '0';
     this.stats.domElement.style.top = '0';
+    this.stats.domElement.style.zIndex = 0;
     this.container.appendChild(this.stats.dom);
 
     //create light for the scene and add it to the scene
@@ -146,11 +147,26 @@ function Environment(filepath, textures, width, height, container){
 
     }.bind(this);
 
+    var clearAll = function(){
+      clearThree(this.object);
+    }.bind(this);
+
+    var clearThree = function(obj){
+      while(obj.children.length > 0){
+        clearThree(obj.children[0])
+        obj.remove(obj.children[0]);
+      }
+      if(obj.geometry) obj.geometry.dispose()
+      if(obj.material) obj.material.dispose()
+      if(obj.texture) obj.texture.dispose()
+    }.bind(this);
+
     //returning functions created inside the thing function
     return {
         run: run, //return animate function
         update: update,
         pauseAnimation: pauseAnimation,
-        resumeAnimation: resumeAnimation
+        resumeAnimation: resumeAnimation,
+        clearAll : clearAll
     }
 }

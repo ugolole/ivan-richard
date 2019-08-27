@@ -31,6 +31,7 @@
         "../node_modules/resize-sensor/ResizeSensor.min.js",
         "../node_modules/three/examples/js/controls/OrbitControls.js",
         "../node_modules/three/examples/js/libs/inflate.min.js",
+        "../node_modules/dat.gui/build/dat.gui.js",
         "assets/js/Artifact.js",
         "assets/js/EnvironmentAPI.js"
       ],
