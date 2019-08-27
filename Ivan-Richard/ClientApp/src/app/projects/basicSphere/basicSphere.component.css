@@ -29,6 +29,17 @@ canvas{
   padding-right:15%;
 }
 
+.glyphicon.glyphicon-arrow-left {
+  font-size: 50px;
+}
+
+.back{
+  position:relative;
+  float:left;
+  margin: 10px 10px 10px 10px;
+
+}
+
 @media (max-width: 767px) {
   /* On small screens, the nav menu spans the full width of the screen. Leave a space for it. */
   .content-box {
