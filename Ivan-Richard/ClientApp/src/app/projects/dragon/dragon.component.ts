@@ -12,10 +12,14 @@ declare var dat:any;
 })
 
 export class Dragon implements OnInit{
+  constructor(private router: Router, @Inject('BASE_URL') private baseUrl: string){
+    if(this.router.navigated != true){
 
+    }
+  }
   ngOnInit(){
-
-    var artifact = 'assets/fbx/DragonFinal.fbx';
+    console.log(this.router.url);
+    var artifact = './assets/fbx/DragonFinal.fbx';
     var container = 'dragonEnv';
     var datContainer = '.datGUI';
 
@@ -84,9 +88,5 @@ export class Dragon implements OnInit{
 
   }
 
-  constructor(private router: Router, @Inject('BASE_URL') private baseUrl: string){
-    if(this.router.navigated != true){
 
-    }
-  }
 }

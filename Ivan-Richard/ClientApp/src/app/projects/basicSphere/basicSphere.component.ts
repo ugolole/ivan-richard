@@ -15,7 +15,7 @@ export class BasicSphere implements OnInit{
 
   ngOnInit(){
 
-    var artifact = 'assets/fbx/Sphere.fbx';
+    var artifact = './assets/fbx/Sphere.fbx';
     var container = 'basicSphereEnv';
     var datContainer = '.datGUI';
 
