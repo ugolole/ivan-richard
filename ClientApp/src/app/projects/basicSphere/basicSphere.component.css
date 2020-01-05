@@ -1,0 +1,49 @@
+.content-box-fbx{
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  width: 100%;
+  height: 60vh;
+}
+
+.content-box-fbx{
+  border-radius: 1px;
+  box-shadow: 2px 2px 2px gainsboro;
+  border: 1px solid #efefef;
+}
+
+.content-box-fbx:hover{
+  box-shadow: 4px 4px 4px gainsboro;
+}
+
+canvas{
+  touch-action: none;
+}
+
+.datGUI{
+  position: absolute;
+  right: 0px;
+}
+
+.content-box{
+  padding-left:15%;
+  padding-right:15%;
+}
+
+.glyphicon.glyphicon-arrow-left {
+  font-size: 50px;
+}
+
+.back{
+  position:relative;
+  float:left;
+  margin: 10px 10px 10px 10px;
+
+}
+
+@media (max-width: 767px) {
+  /* On small screens, the nav menu spans the full width of the screen. Leave a space for it. */
+  .content-box {
+    padding-left:0%;
+    padding-right:0%;
+  }
+}

@@ -1,0 +1,165 @@
+li .glyphicon {
+    margin-right: 10px;
+}
+
+
+/* Highlighting rules for nav menu items */
+li.link-active a,
+li.link-active a:hover,
+li.link-active a:focus {
+    background-color: #4189C7;
+    color: white;
+    -webkit-box-shadow: 0 6px 4px -4px gainsboro;
+    -moz-box-shadow: 0 6px 4px -4px gainsboro;
+    box-shadow: 0 6px 4px -4px gainsboro;
+}
+
+/* Keep the nav menu independent of scrolling and on top of other items */
+.main-nav {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color:white;
+    padding-left:5%;
+    padding-right:5%;
+
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+
+    -webkit-box-shadow: 0 6px 4px -4px gainsboro;
+    -moz-box-shadow: 0 6px 4px -4px gainsboro;
+    box-shadow: 0 6px 4px -4px gainsboro;
+}
+
+.navbar{
+  position: relative;;
+  top: 0px;
+  padding-top: 20px;
+}
+
+/*override the original color of the humbugger button*/
+.navbar-toggle .icon-bar {
+  background-color: black;
+}
+
+ /*temporary border*/
+.border{
+  border: 1px solid black;
+}
+
+.navbar-nav{
+  position:relative;
+  float:right;
+}
+
+.profile-block, .profile-block:focus{
+  position:relative;
+  float:left;
+  padding:5px 5px 5px 5px;
+  outline: none;
+  position:relative;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.profile-block:hover{
+  background-color: #f8f8f8;
+}
+
+.home-active{
+  border-bottom:3px solid #4189C7;
+  border-left: 2px solid #efefef;
+  border-right: 2px solid #efefef;
+  border-top: 2px solid #efefef;
+
+  color: rgb(1, 89, 172);
+
+  -webkit-box-shadow: 0 6px 4px -4px gainsboro;
+  -moz-box-shadow: 0 6px 4px -4px gainsboro;
+  box-shadow: 0 6px 4px -4px gainsboro;
+
+
+}
+
+ .profile-block-info{
+  position:relative;
+  top:15px;
+  float:left;
+  margin-left: 20px;
+
+}
+
+ .profile-name {
+  position:relative;
+  font-size: 15pt;
+}
+
+.profile-title{
+  font-size:10pt;
+}
+
+ .profile-pic{
+  border-radius: 100px;
+  border:1px solid #efefef;
+  float:left;
+  width:100px;
+  height:100px;
+}
+
+.navbar li {
+  font-size: 15px;
+  margin: 6px;
+}
+
+.navbar li a {
+  padding: 10px 16px;
+  border-radius: 4px;
+}
+
+
+@media (max-width: 765px) {
+  .shadow {
+    -webkit-box-shadow: 0 6px 4px -4px gainsboro;
+    -moz-box-shadow: 0 6px 4px -4px gainsboro;
+    box-shadow: 0 6px 4px -4px gainsboro;
+  }
+
+  /* On small screens, convert the nav menu to a vertical sidebar */
+    .main-nav {
+        width: 100%;
+    }
+    .navbar {
+        border-radius: 0px;
+        border-width: 0px;
+        height: 100%;
+    }
+    .navbar-header {
+        float: none;
+    }
+    .navbar-collapse {
+        padding: 0px;
+    }
+    .navbar ul {
+        float: none;
+        padding-left:20px;
+        padding-right:20px;
+    }
+    .navbar li {
+        float: none;
+        font-size: 15px;
+        margin: 6px;
+    }
+    .navbar li a {
+        padding: 10px 16px;
+        border-radius: 4px;
+    }
+    .navbar a {
+        /* If a menu item's text is too long, truncate it */
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
