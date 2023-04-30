@@ -28,7 +28,7 @@
     "dat.gui": "^0.7.6",
     "fancybox": "^3.0.1",
     "font-awesome": "^4.7.0",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "oidc-client": "^1.10.1",
     "popper.js": "^1.16.0",
     "resize-sensor": "0.0.6",
